@@ -2,11 +2,12 @@ function mostrar()
 {
 //Genero el número RANDOM entre 1 y 10 
 		
-		//revisar, no funciona.
-		var numeroAleatorio;
+	var aleatorio;
 
-		numeroAleatorio=Math.round(Math.random(1,11));
+	aleatorio=Math.floor((Math.random()*10)+1);
 
-		return(numeroAleatorio);
+	alert(aleatorio);
+
+//Fórmula Genérica = Math.floor(Math.random()*(número máximo - número mínimo))+ mínimo
 
 }//FIN DE LA FUNCIÓN

@@ -1,0 +1,11 @@
+git clone (Descarga repositorio)
+
+git status  (Muestra estado dearchivos del repositorio)
+
+git add . (Agrega los archivos a tracking . equivale a carpeta raíz, también se puede agregar archivos individualmente)
+
+git commit -m "comentario" (Entre comillas ingresar comentario)
+
+git pull (Sincroniza en la carpeta local el estado de los archivos online)
+
+git push origin master (Sube los archivos locales trabajados para guardarlos online)
