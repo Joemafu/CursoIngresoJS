@@ -1,24 +1,25 @@
 function mostrar()
 {
 //tomo la edad  
-    var mesDelAño=document.getElementById('mes').value;    
+    var mesDelAño=document.getElementById("mes").value;    
 
-    if(mesDelAño=="Enero"||"Febrero"||"Marzo"||"Abril"||"Mayo"||"Junio")
+    switch(mesDelAño)
     {
-        alert("Estamos en "+mesDelAño+", falta para el invierno");
-    }
-    else
+        case("Septiembre"):
+        case("Octubre"):
+        case("Noviembre"):
+        case("Diciembre"):
+            alert("Estamos en "+mesDelAño+", ya pasamos el frío, ahora el calor!");
+            break
 
-        if(mesDelAño=="Julio"||"Agosto")
-        {
+        case("Julio"):
+        case("Agosto"):
             alert("Estamos en "+mesDelAño+", abrigate que hace frío!");
-        }
-        else
+            break
 
-            if(mesDelAño=="Septiembre"||"Octubre"||"Noviembre")
-            {
-                alert("Estamos en "+mesDelAño+", ya pasamos el frío, ahora el calor!");
-            }
+        default:
+            alert("Estamos en "+mesDelAño+", falta para el invierno"); 
+    }
 
 
 
