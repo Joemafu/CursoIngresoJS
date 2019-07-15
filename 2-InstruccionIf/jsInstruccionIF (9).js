@@ -4,7 +4,7 @@ function mostrar()
 		
 	var aleatorio;
 
-	aleatorio=Math.floor((Math.random()*10)+1);
+	aleatorio=Math.floor(Math.random()*10)+1;
 
 	alert(aleatorio);
 
