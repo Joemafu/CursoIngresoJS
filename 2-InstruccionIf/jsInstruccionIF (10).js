@@ -6,19 +6,20 @@ function mostrar()
 
 	aleatorio=Math.floor(Math.random()*10)+1;
 
-	if(aleatorio<4)
-	{
-		alert("Su nota es "+aleatorio+", vamos, la próxima se puede.");
-	}
-
 	if(aleatorio>8)
 	{
 		alert("Su nota es "+aleatorio+", EXCELENTE.");
 	}
+	else
 
-	if(aleatorio>3&&aleatorio<9)
-	{
-		alert("Su nota es "+aleatorio+", APROBÓ.");
-	}
+		if(aleatorio>=4)
+		{
+			alert("Su nota es "+aleatorio+", APROBÓ.");
+		}
+		else
+
+		{
+			alert("Su nota es "+aleatorio+", vamos, la próxima se puede.");
+		}
 
 }//FIN DE LA FUNCIÓN
