@@ -1,24 +1,24 @@
 function mostrar()
 {
 //tomo la edad  
-    var mesDelAño=document.getElementById("mes").value;    
+var mes=document.getElementById("mes").value;    
 
-    switch(mesDelAño)
-    {
-        case("Septiembre"):
-        case("Octubre"):
-        case("Noviembre"):
-        case("Diciembre"):
-            alert("Estamos en "+mesDelAño+", ya pasamos el frío, ahora el calor!");
-            break
+switch(mes)
+{
+    case("Septiembre"):
+    case("Octubre"):
+    case("Noviembre"):
+    case("Diciembre"):
+        alert("Estamos en "+mes+", ya pasamos el frío, ahora el calor!");
+        break
 
-        case("Julio"):
-        case("Agosto"):
-            alert("Estamos en "+mesDelAño+", abrigate que hace frío!");
-            break
+    case("Julio"):
+    case("Agosto"):
+        alert("Estamos en "+mes+", abrigate que hace frío!");
+        break
 
-        default:
-            alert("Estamos en "+mesDelAño+", falta para el invierno"); 
+    default:
+        alert("Estamos en "+mes+", falta para el invierno"); 
     }
 
 
