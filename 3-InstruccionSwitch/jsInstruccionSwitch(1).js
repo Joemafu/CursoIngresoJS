@@ -1,23 +1,21 @@
-function mostrar()
-{
-//tomo la edad  
+function mostrar() {
+    //tomo la edad  
     var mes = document.getElementById('mes').value;
 
-    switch(mes)
-    {
-        case"Enero":
+    switch (mes) {
+        case "Enero":
             alert("Que comiences bien el año!");
             break
 
-        case"Marzo":
+        case "Marzo":
             alert("A clases!");
             break
 
-        case"Julio":
+        case "Julio":
             alert("Se vienen las vacaciones!");
             break
 
-        case"Diciembre":
+        case "Diciembre":
             alert("Felices Fiestas!");
             break
     }
