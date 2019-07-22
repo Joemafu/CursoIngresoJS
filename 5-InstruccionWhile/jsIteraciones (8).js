@@ -4,7 +4,7 @@ function mostrar() {
 	var respuesta = "";
 
 	while (respuesta == "") {
-		numero = parseInt(prompt("Ingrese un número.", 10));
+		numero = parseInt(prompt("Ingrese un número."), 10);
 		if (!isNaN(numero)) {
 			if (numero >= 0) {
 				positivo = positivo + numero;

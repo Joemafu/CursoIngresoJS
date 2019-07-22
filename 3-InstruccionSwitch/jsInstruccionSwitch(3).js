@@ -3,7 +3,7 @@ function mostrar() {
     var mes = document.getElementById("mes").value;
 
     switch (mes) {
-        case ("Febrero"):
+        case "Febrero":
             alert("Este mes no tiene más de 29 días.");
             break
 

@@ -1,12 +1,12 @@
 function mostrar() {
 
-	var maximo = parseInt(prompt("Ingrese un número.", 10));
-	var minimo = maximo
-	var respuesta = prompt("Quiere agregar otro número? Presione Enter para confirmar, cualquier otro valor para cancelar.")
-	var numero
+	var maximo = null;
+	var minimo = maximo;
+	var respuesta = "";
+	var numero;
 
 	while (respuesta == "") {
-		numero = parseInt(prompt("Ingrese un número.", 10));
+		numero = parseInt(prompt("Ingrese un número."));
 		if (!isNaN(numero)) {
 
 			if (numero > maximo) {
@@ -19,11 +19,14 @@ function mostrar() {
 		else {
 			alert("Ingrese sólo caracteres numéricos.");
 		}
-		respuesta = prompt("Quiere agregar otro número? Presione Enter para confirmar, cualquier otro valor para cancelar.")
+		respuesta = prompt("Quiere agregar otro número? Presione Enter para confirmar, cualquier otro valor para cancelar.");
 	}
 
-	document.getElementById('maximo').value = maximo;
-	document.getElementById('minimo').value = minimo;
-	// declarar variables
+	if (maximo == null) {
+		maximo = "No ingresó número válido.";
+		minimo = "No ingresó número válido.";
+	}
 
+	document.getElementById("maximo").value = maximo;
+	document.getElementById("minimo").value = minimo;
 }//FIN DE LA FUNCIÓN
