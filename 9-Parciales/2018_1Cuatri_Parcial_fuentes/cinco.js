@@ -13,7 +13,7 @@ function mostrar() {
         case "tierra":
             mensaje = ("Acá vivimos.");
             break
-
+            
         case "marte":
         case "jupiter":
         case "saturno":
