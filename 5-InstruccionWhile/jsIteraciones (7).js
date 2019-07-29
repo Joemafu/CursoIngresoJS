@@ -3,16 +3,13 @@ function mostrar() {
 	var contador = 0;
 	var acumulador = 0;
 	var respuesta = "";
-
-	var numero = 0
-	var contador = 0;
-	var acumulador = 0;
+	var numero;
 
 	while (respuesta == "") {
 		numero = parseInt(prompt("Ingrese un número."), 10);
 		if (!(isNaN(numero))) {
 			acumulador = acumulador + numero;
-			contador = contador + 1;
+			contador += 1;
 			console.log(numero);
 			console.log("acumulador " + acumulador);
 			console.log("contador " + contador);
