@@ -1,6 +1,6 @@
 function mostrar() {
 
-    for (var numero = 0 ; numero == 9 ; ){
+    for (var numero = 0 ; numero != 9 ; ){
         numero = prompt("Ingrese un número.")
     }
 
